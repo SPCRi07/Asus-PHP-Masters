@@ -1,0 +1,142 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: #000;
+}
+a{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 200px;
+    height: 40px;
+    text-align: center;
+    line-height: 60px;
+    color: #fff;
+    font-size: 24px;
+    font-family: sans-serif;
+}
+.box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background: #000;
+    text-align: center;
+}
+.box h1{
+    color: aqua;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.box input[type="text"],.box input[type="password"]
+{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid aqua;
+    padding: 14px 10px;
+    width: 200px;
+    outline: none;
+    color: white;
+    border-radius: 100px;
+    transition: 0.25s;
+    
+}
+.box input[type="text"]:focus,.box input[type="password"]:focus{
+    width: 20px;
+    border-color: aqua;
+}
+.box input[type="submit"]{
+    border: 0;
+    transform: translateY(-50%,-50%);
+    margin: 20px auto;
+    text-align: center;
+    
+    padding: 14px 40px;
+    color: white;
+    border-radius: 30px;
+    transition: 0.25s;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: sans-serif;
+    background: linear-gradient(90deg,#03a9f4,#f441a5,#ffeb3b,#03a9f4);
+    box-sizing: border-box;
+    background-size: 400%;
+}
+.box input[type="submit"]:hover
+{
+    animation: animate 8s linear infinite;
+}
+@keyframes animate
+{
+    0%{
+        background-position: 0%;
+    }
+    100%{
+        background-position: 400%;
+    }
+}
+.box input[type="submit"]:before{
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    z-index: -1;
+    background: linear-gradient(90deg,#03a9f4,#f441a5,#ffeb3b,#03a9f4);
+    background-size: 400%;
+    border-radius: 40px;
+    opacity: 0;
+    transition: 0.5s;
+}
+.box input[type="submit"]:hover:before
+{
+    filter: blur(20px);
+    opacity: 1;
+    animation: animate 8s linear infinite;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

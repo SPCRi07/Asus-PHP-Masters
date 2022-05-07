@@ -1,0 +1,54 @@
+*{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: montserrat;
+}
+
+body{
+  min-height: 100vh;
+background-image: radial-gradient(circle, #1d7a0f, #265b0b, #223d0b, #192207, #030400);
+}
+
+
+.txtb{
+  border-bottom: 2px solid #adadad;
+  position: relative;
+  margin: 30px 0;
+}
+
+.txtb input{
+  font-size: 15px;
+  color: #333;
+  border: none;
+  width: 100%;
+  outline: none;
+  background: none;
+  padding: 0 5px;
+  height: 40px;
+}
+
+
+.logbtn{
+  display: block;
+  width: 100%;
+  height: 50px;
+  border: none;
+  background: linear-gradient(120deg,#3498db,#8e44ad,#3498db);
+  background-size: 200%;
+  color: #fff;
+  outline: none;
+  cursor: pointer;
+  transition: .5s;
+}
+
+.logbtn:hover{
+  background-position: right;
+}
+
+.bottom-text{
+  margin-top: 60px;
+  text-align: center;
+  font-size: 13px;
+}
+
